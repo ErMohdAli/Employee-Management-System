@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+  <meta charset="UTF-8">
+  <title>About Us - Employee Management System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  {% include 'navbar.html' %}
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        {% comment %} <img src="pic_trulli.jpg" alt="Italian Trulli"> {% endcomment %}
+        <img src="{% static 'images/about-img.jpg' %}" alt="About Image" class="img-fluid">
+
+
+      </div>
+      <div class="col-md-6">
+        <h1 class="mb-4">About Our System</h1>
+        <p class="lead">
+          Our Employee Management System is a smart solution to help organizations manage their workforce with ease and efficiency.
+        </p>
+        <p>
+          From hiring to tracking performance, managing records, and generating reports — our platform simplifies it all. It’s built to save time, reduce manual errors, and give managers real-time insights into their teams.
+        </p>
+        <p>
+          Whether you’re a startup or a large enterprise, our goal is to help you focus more on people and less on paperwork.
+        </p>
+      </div>
+    </div>
+
+    <!-- Optional extra section -->
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h3>Key Features</h3>
+        <ul class="list-group list-group-flush mt-3">
+          <li class="list-group-item">Easy Employee Onboarding</li>
+          <li class="list-group-item">Centralized Employee Database</li>
+          <li class="list-group-item">Attendance & Leave Management</li>
+          <li class="list-group-item">Performance Tracking</li>
+          <li class="list-group-item">Admin Dashboard & Reports</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

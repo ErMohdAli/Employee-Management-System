@@ -1,0 +1,52 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Project | Employee Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static '/static/about.css' %}">
+    {% comment %} <link rel="stylesheet" href="about.css">
+</head> {% endcomment %}
+<body>
+    {% include 'navbar.html'%}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- navbar content -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4">About Employee Management</h1>
+                <p class="lead">Employee Management is a web-based application designed to simplify employee data management for organizations. Built using Django as the backend framework and Bootstrap for the frontend, this application provides a user-friendly interface for managing employee information, tracking attendance, and generating reports.</p>
+                <hr>
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li><strong>Backend:</strong> Django</li>
+                    <li><strong>Frontend:</strong> Bootstrap, HTML, CSS</li>
+                </ul>
+                <hr>
+                <h2>Features</h2>
+                <ul>
+                    <li>Employee data management (add, edit, delete)</li>
+                    <li>Attendance tracking and reporting</li>
+                    <li>Customizable reporting and analytics</li>
+                    <li>User authentication and authorization</li>
+                </ul>
+                <hr>
+                <h2>Development Team</h2>
+                <ul>
+                    <li><strong>Developer:</strong> Mohammad Arman</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Employee Management. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
